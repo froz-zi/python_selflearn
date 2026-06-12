@@ -1,0 +1,1 @@
+random_kata = ["1ee33d"]
