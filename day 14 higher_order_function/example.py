@@ -139,3 +139,50 @@ def print_full_name(first_name, last_name, country):
         first_name, last_name))
 
 print_full_name("Asabeneh", "Yetayeh",'Finland')
+
+
+## Fungsi Tingkat Tinggi Bawaan
+
+# Beberapa fungsi tingkat tinggi bawaan yang kita bahas di bagian ini adalah _map_, _filter_, dan _reduce_.
+# Fungsi Lambda dapat diteruskan sebagai parameter dan kasus penggunaan terbaik dari fungsi lambda ada pada fungsi seperti peta, filter, dan pengurangan.
+
+### Python - Fungsi Peta
+
+# Fungsi peta adalah fungsi bawaan yang menggunakan suatu fungsi dan dapat diubah sebagai parameter.
+
+# ```python
+# sintaksis
+#     map(function, iterable)
+# ```
+
+# **Contoh:1**
+
+# ```python
+numbers = [1, 2, 3, 4, 5]  # dapat diubah
+def square(x):
+    return x ** 2
+numbers_squared = map(square, numbers)
+print(list(numbers_squared))  # [1, 4, 9, 16, 25]
+# Mari kita terapkan dengan fungsi lambda
+numbers_squared = map(lambda x : x ** 2, numbers)
+print(list(numbers_squared))  # [1, 4, 9, 16, 25]
+# ```
+
+# **Contoh:2**
+
+# ```python
+numbers_str = ['1', '2', '3', '4', '5']  # dapat diubah
+numbers_int = map(int, numbers_str)
+print(list(numbers_int))  # [1, 2, 3, 4, 5]
+# ```
+
+# **Contoh:3**
+
+# ```python
+names = ['Asabeneh', 'Lidiya', 'Ermias', 'Abraham']  # dapat diubah
+
+def change_to_upper(name):
+    return name.upper()
+
+names_upper_cased = map(change_to_upper, names)
+print(list(names_upper_cased))  # [Asabnahi, Al-Diyaa, Armasi, kuburan mereka]

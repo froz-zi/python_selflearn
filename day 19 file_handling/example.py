@@ -6,26 +6,26 @@
 # - "b" - Biner - Mode biner mis.gambar
 
 
-# with open(r"C:\Users\Fahrul Rozi\Rozi\data.txt", "r") as file:
-#     isi = file.read()
-#     print(isi)
+with open(r"C:\Users\Fahrul Rozi\Rozi\data.txt", "r") as file:
+    isi = file.read()
+    print(isi)
 
-# f = open(r"C:\Users\Fahrul Rozi\Rozi\data.txt")
-# txt = f.read()
-# print(type(txt))
-# print(txt)
-# f.close()
-
-
-# with open(r"C:\Users\Fahrul Rozi\Rozi\sata.txt", "w")as f:
-#     f.write('This text will be written in a newly created file')
+f = open(r"C:\Users\Fahrul Rozi\Rozi\data.txt")
+txt = f.read()
+print(type(txt))
+print(txt)
+f.close()
 
 
+with open(r"C:\Users\Fahrul Rozi\Rozi\sata.txt", "w")as f:
+    f.write('This text will be written in a newly created file')
 
 
-# with open(r"C:\Users\Fahrul Rozi\Rozi\bata.txt", "a") as file:
-#     isi2 = file.add()
-#     print(isi2)
+
+
+with open(r"C:\Users\Fahrul Rozi\Rozi\bata.txt", "a") as file:
+    isi2 = file.add()
+    print(isi2)
 
 with open(r"C:\Users\Fahrul Rozi\Rozi\data2.txt", "w") as f:
     f.write("Halo, ini teks baru")

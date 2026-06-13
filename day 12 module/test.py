@@ -1,1 +1,3 @@
-random_kata = ["1ee33d"]
+import string
+import random 
+

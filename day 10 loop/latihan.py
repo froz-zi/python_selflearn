@@ -176,12 +176,12 @@ for language, total in sorted_languages[:10]:
 
 # 3. Temukan 10 negara dengan populasi terpadat di dunia
 
-# sorted_countries = sorted(
-#     countries_data,
-#     key=lambda country : country["population"],
-#     reverse = True
+sorted_countries = sorted(
+    countries_data,
+    key=lambda country : country["population"],
+    reverse = True
     
-# )
+)
 
-# for country in sorted_countries[0:10]:
-#     print(country["name"], "-", country ["population"])
+for country in sorted_countries[0:10]:
+    print(country["name"], "-", country ["population"])
